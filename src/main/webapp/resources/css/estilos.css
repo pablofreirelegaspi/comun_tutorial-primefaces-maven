@@ -1,0 +1,236 @@
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-size: 10px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: 145% auto;
+    background-color: #000000;
+    background-image: url("#{resource['images/interface/bodyBackground.jpg']}");
+}
+
+.contenedorTemplate {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.ui-button-text {
+    padding: 4px !important;
+}
+
+.ui-dialog-titlebar {
+    padding: 4px !important;
+}
+
+.ui-selectonemenu-label {
+    font-size: 12px !important;
+}
+
+.ui-selectonemenu-items {
+    font-size: 12px !important;
+}
+
+.ui-selectonemenu-item.ui-state-highlight{
+    background: rgb(0,122,217) !important;
+}
+
+.ui-selectmanymenu {
+    font-size: 12px !important;
+}
+
+.ui-selectlistbox-item.ui-state-highlight {
+    background: rgb(0,122,217) !important;
+}
+
+.ui-datatable-data>tr.ui-state-highlight {
+    background: rgb(0,122,217) !important;
+}
+
+.ui-datatable thead th.ui-sortable-column.ui-state-focus {
+    background: rgb(0,122,217) !important;
+}
+
+.ui-tabmenuitem.ui-state-hover {
+    color: black !important;
+    background: rgb(255,255,255) !important;
+}
+
+body .fc .fc-daygrid-day.fc-day-today, body .fc .fc-timegrid-col.fc-day-today {
+    color: black !important;
+    background: rgb(200,200,255) !important;
+}
+
+.ui-selectonebutton>.ui-button.ui-state-active {
+    border-width: 3px;
+}
+
+body .ui-tabs .ui-tabs-nav li.ui-tabs-header.ui-state-active {
+    background-color: #333 !important;
+}
+
+form > .ui-layout-center {
+    border-style: solid; 
+    border-width: 1px;
+    border-color: rgb(240,240,240);
+    padding-top: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    background:transparent;
+}
+
+form > .ui-layout-west {
+    background:transparent;
+}
+
+form > .ui-layout-north {
+    overflow: hidden;
+    background:transparent;
+}
+
+form > .ui-layout-south {
+    overflow: hidden;
+    background:transparent;
+}
+
+form > .ui-layout-west > .ui-layout-north {
+    border-style: solid; 
+    border-width: 1px;
+    border-color: rgb(240,240,240);
+    padding-top: 15px;
+    padding-left: 0px;
+    background:transparent;
+}
+
+form > .ui-layout-west > .ui-layout-center {
+    overflow: hidden;
+    border-style: solid; 
+    border-width: 0px;
+    border-color: rgb(240,240,240);
+    padding-top: 15px;
+    padding-left: 5px;
+    background:transparent;
+}
+
+
+
+.headerTemplate {
+    height: 65px;
+    color: gray;
+    font-weight: bold;
+    font-size: 12px;
+    background-color: rgb(255,255,255);
+    background-repeat: no-repeat;
+}
+
+.footerTemplate {
+    height: 65px;
+    background-color: rgb(255,255,255);
+    color: gray;
+    font-size: 12px;
+}
+
+.status-title {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+.statusTemplate {
+    text-align: center;
+    font-size: 9px;
+    font-weight: normal;
+    color: white;
+}
+
+.statusText {
+    font-size: 12px;
+    color: wheat;
+    font-weight: normal;
+}
+
+.statusTable {
+    padding-top: 10px;
+}
+
+.navigation-title {
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+    color: black;
+}
+
+.navigation-menu {
+    text-align: left;
+    font-size: 12px;
+    font-weight: normal;
+    color: black;
+}
+
+.navigation-button {
+    width: 32px;
+    height: 32px;
+}
+
+.content-general {
+    font-size: 12px;
+}
+
+.content-title {
+    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.popup-content {
+    text-align: center;
+    font-size: 12px;
+}
+
+.errorMessages {
+    font-weight: bold;
+    color: crimson;
+}
+
+img {
+    border: none;
+}
+
+a:link
+{
+    text-decoration: none;
+    color: black;
+}
+
+a:active
+{
+    text-decoration: none;
+    color: black;
+}
+
+a:visited
+{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover
+{
+    text-decoration: underline; /* EL SUBJEFE QUIERE LOS ENLACES CON SUBRAYADO: xD */
+    color: black;
+}
