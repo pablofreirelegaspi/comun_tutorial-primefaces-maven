@@ -7,7 +7,7 @@
 
 	<groupId>com.devpredator</groupId>
 	<artifactId>tutorial-primefaces</artifactId>
-	<version>1.1.1</version>
+	<version>1.1.2</version>
 	<packaging>war</packaging>
 
 	<name>tutorial-primefaces Maven Webapp</name>
@@ -60,9 +60,14 @@
                 </dependency><dependency>
                     <groupId>org.primefaces</groupId>
                     <artifactId>primefaces</artifactId>
-                    <version>14.0.12</version>
+                    <version>15.0.10</version>
                 </dependency>
-                
+		<!-- PRIMEFACES themes-->
+                <dependency>
+                    <groupId>org.primefaces</groupId>
+                    <artifactId>primefaces-themes</artifactId>
+                    <version>15.0.10</version>
+                </dependency>
 		<!-- PRIMEFACES DEPENDENCIAS -->
                 <dependency>
                     <groupId>com.github.librepdf</groupId>
@@ -73,29 +78,32 @@
                 <dependency>
                     <groupId>org.apache.poi</groupId>
                     <artifactId>poi</artifactId>
-                    <version>5.2.5</version>
+                    <version>5.3.0</version>
 		</dependency>
                 <dependency>
                     <groupId>org.apache.poi</groupId>
                     <artifactId>poi-ooxml</artifactId>
-                    <version>5.2.5</version>
+                    <version>5.4.0</version>
                 </dependency>
 		<!-- PRIMEFACES DEPENDENCIAS -->
 		<!-- FeedReader -->
-		<dependency>
-			<groupId>com.rometools</groupId>
-			<artifactId>rome</artifactId>
-			<version>1.15.0</version>
-		</dependency>
-		<!-- PRIMEFACES DEPENDENCIAS -->
-		<!-- Barcode -->
-                <!-- https://mvnrepository.com/artifact/net.sf.barcode4j/barcode4j -->
+                <!-- Source: https://mvnrepository.com/artifact/com.apptasticsoftware/rssreader -->
                 <dependency>
-                    <groupId>org.primefaces.extensions</groupId>
-                    <artifactId>barcode4j-light</artifactId>
-                    <version>2.3.0</version>
+                    <groupId>com.apptasticsoftware</groupId>
+                    <artifactId>rssreader</artifactId>
+                    <version>3.9.1</version>
+                    <scope>compile</scope>
                 </dependency>
-		<!-- PRIMEFACES DEPENDENCIAS -->
+                <!-- PRIMEFACES DEPENDENCIAS -->
+		<!-- Barcode -->
+                <!-- Source: https://mvnrepository.com/artifact/uk.org.okapibarcode/okapibarcode -->
+                <dependency>
+                    <groupId>uk.org.okapibarcode</groupId>
+                    <artifactId>okapibarcode</artifactId>
+                    <version>0.5.0</version>
+                    <scope>compile</scope>
+                </dependency>
+                <!-- PRIMEFACES DEPENDENCIAS -->
 		<!-- QR Code support for Barcode -->
 		<dependency>
                     <groupId>io.nayuki</groupId>
@@ -107,14 +115,23 @@
 		<dependency>
                     <groupId>com.googlecode.owasp-java-html-sanitizer</groupId>
                     <artifactId>owasp-java-html-sanitizer</artifactId>
-                    <version>20240325.1</version>
+                    <version>20260101.1</version>
 		</dependency>
+		<!-- PRIMEFACES DEPENDENCIAS -->
+		<!-- Charts -->
+                <!-- Source: https://mvnrepository.com/artifact/software.xdev/chartjs-java-model -->
+                <dependency>
+                    <groupId>software.xdev</groupId>
+                    <artifactId>chartjs-java-model</artifactId>
+                    <version>2.6.0</version>
+                    <scope>compile</scope>
+                </dependency>
                 
 		<!-- PRIMEFACES EXTENSIONS -->
                 <dependency>
                     <groupId>org.primefaces.extensions</groupId>
                     <artifactId>primefaces-extensions</artifactId>
-                    <version>14.0.17</version>
+                    <version>15.0.10</version>
                 </dependency>
 		<!-- PRIMEFACES EXTENSIONS DEPENDENCIAS -->
                 <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
