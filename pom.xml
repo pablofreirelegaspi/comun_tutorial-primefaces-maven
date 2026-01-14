@@ -7,7 +7,7 @@
 
 	<groupId>com.devpredator</groupId>
 	<artifactId>tutorial-primefaces</artifactId>
-	<version>1.1.0</version>
+	<version>1.1.1</version>
 	<packaging>war</packaging>
 
 	<name>tutorial-primefaces Maven Webapp</name>
@@ -16,8 +16,8 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
 	</properties>
 
 	<dependencies>
@@ -25,84 +25,67 @@
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.11</version>
+			<version>4.13.2</version>
 			<scope>test</scope>
 		</dependency>
                 
 		<!-- JSF RUNTIME -->
                 <dependency>
-                      <groupId>org.glassfish</groupId>
-                      <artifactId>jakarta.faces</artifactId>
-                      <version>2.3.21</version>
+                  <groupId>org.glassfish</groupId>
+                  <artifactId>jakarta.faces</artifactId>
+                  <version>2.3.21</version>
                 </dependency>
+                <!-- https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-server -->
                 <dependency>
-                    <groupId>org.jboss.weld.servlet</groupId>
-                    <artifactId>weld-servlet-shaded</artifactId>
-                    <version>3.1.9.Final</version>
+                    <groupId>org.eclipse.jetty</groupId>
+                    <artifactId>jetty-server</artifactId>
+                    <version>9.4.58.v20250814</version>
                 </dependency>
-                <dependency>
-                    <groupId>jakarta.servlet.jsp.jstl</groupId>
-                    <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
-                    <version>1.2.7</version>
-                </dependency>
-                <dependency> <!-- Optional, only when <f:websocket> is used. -->
-                    <groupId>org.glassfish</groupId>
-                    <artifactId>jakarta.json</artifactId>
-                    <version>1.1.6</version>
-                </dependency>
-                <dependency> <!-- Optional, only when <f:validateBean> or <f:validateWholeBean> is used. -->
-                    <groupId>org.hibernate.validator</groupId>
-                    <artifactId>hibernate-validator</artifactId>
-                    <version>6.2.5.Final</version>
-                </dependency>
-                <!-- https://mvnrepository.com/artifact/javax.el/javax.el-api -->
                 <dependency>
                     <groupId>javax.el</groupId>
                     <artifactId>javax.el-api</artifactId>
                     <version>3.0.1-b06</version>
                 </dependency>
-                <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+                <!-- https://mvnrepository.com/artifact/org.apache.bval/bval-jsr -->
                 <dependency>
-                    <groupId>javax.servlet</groupId>
-                    <artifactId>javax.servlet-api</artifactId>
-                    <version>3.1.0</version>
-                    <scope>provided</scope>
+                    <groupId>org.apache.bval</groupId>
+                    <artifactId>bval-jsr</artifactId>
+                    <version>3.0.2</version>
                 </dependency>
-                  
-		<!-- PRIMEFACES CORE -->
-		<!-- VERSION ELITE 12.0.3 -->
                 <dependency>
-                 <groupId>org.primefaces</groupId>
-                 <artifactId>primefaces</artifactId>
-                 <version>14.0.2</version>
+                    <groupId>javax.enterprise</groupId>
+                    <artifactId>cdi-api</artifactId>
+                    <version>2.0.SP1</version>
+		<!-- PRIMEFACES -->
+                </dependency><dependency>
+                    <groupId>org.primefaces</groupId>
+                    <artifactId>primefaces</artifactId>
+                    <version>14.0.12</version>
                 </dependency>
+                
 		<!-- PRIMEFACES DEPENDENCIAS -->
-		<!-- DataExporter (PDF) -->
-		<dependency>
-			<groupId>com.github.librepdf</groupId>
-			<artifactId>openpdf</artifactId>
-			<version>1.4.1</version>
+                <dependency>
+                    <groupId>com.github.librepdf</groupId>
+                    <artifactId>openpdf</artifactId>
+                    <version>1.4.1</version>
 		</dependency>
 		<!-- PRIMEFACES DEPENDENCIAS -->
-		<!-- DataExporter (Excel or XML) -->
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi</artifactId>
-			<version>5.2.5</version>
+                <dependency>
+                    <groupId>org.apache.poi</groupId>
+                    <artifactId>poi</artifactId>
+                    <version>5.2.5</version>
 		</dependency>
+                <dependency>
+                    <groupId>org.apache.poi</groupId>
+                    <artifactId>poi-ooxml</artifactId>
+                    <version>5.2.5</version>
+                </dependency>
 		<!-- PRIMEFACES DEPENDENCIAS -->
 		<!-- FeedReader -->
 		<dependency>
 			<groupId>com.rometools</groupId>
 			<artifactId>rome</artifactId>
 			<version>1.15.0</version>
-		</dependency>
-		<!-- PRIMEFACES DEPENDENCIAS -->
-		<!-- FileUpload -->
-		<dependency>
-			<groupId>commons-fileupload</groupId>
-			<artifactId>commons-fileupload</artifactId>
-			<version>1.5</version>
 		</dependency>
 		<!-- PRIMEFACES DEPENDENCIAS -->
 		<!-- Barcode -->
@@ -122,16 +105,16 @@
 		<!-- PRIMEFACES DEPENDENCIAS -->
 		<!-- TextEditor -->
 		<dependency>
-			<groupId>com.googlecode.owasp-java-html-sanitizer</groupId>
-			<artifactId>owasp-java-html-sanitizer</artifactId>
-			<version>20240325.1</version>
+                    <groupId>com.googlecode.owasp-java-html-sanitizer</groupId>
+                    <artifactId>owasp-java-html-sanitizer</artifactId>
+                    <version>20240325.1</version>
 		</dependency>
                 
 		<!-- PRIMEFACES EXTENSIONS -->
                 <dependency>
                     <groupId>org.primefaces.extensions</groupId>
                     <artifactId>primefaces-extensions</artifactId>
-                    <version>14.0.2</version>
+                    <version>14.0.17</version>
                 </dependency>
 		<!-- PRIMEFACES EXTENSIONS DEPENDENCIAS -->
                 <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
@@ -139,14 +122,6 @@
                     <groupId>com.google.code.gson</groupId>
                     <artifactId>gson</artifactId>
                     <version>2.10.1</version>
-                </dependency>
-                
-		<!-- APACHE POI OOXML -->
-                <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
-                <dependency>
-                    <groupId>org.apache.poi</groupId>
-                    <artifactId>poi-ooxml</artifactId>
-                    <version>5.2.5</version>
                 </dependency>
                 
 		<!-- OMNIFACES -->
